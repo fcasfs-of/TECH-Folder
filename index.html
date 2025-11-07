@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerenciador de Arquivos Profissional</title>
+<!-- Font Awesome para ícones -->
+<link rel="stylesheet" href="css/all.min.css" />
+<!-- CSS Moderno e Responsivo -->
+<link rel="stylesheet" href="css/theme.css" />
+
+<style>
+ 
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Gerenciador de Arquivos</h1>
+  <div class="buttons-group">
+    <button id="selectFolderBtn"><i class="fas fa-folder-open"></i>Selecionar Pasta</button>
+    <select id="formatSelect">
+      <option value="">Formato do Arquivo</option>
+      <option value="video">Vídeo</option>
+      <option value="audio">Áudio</option>
+      <option value="pdf">PDF</option>
+      <option value="csv">CSV</option>
+      <option value="xml">XML</option>
+      <option value="html">HTML</option>
+      <option value="ini">INI</option>
+      <option value="txt">TXT</option>
+      <option value="rtf">RTF</option>
+      <option value="image">Imagem</option>
+      <option value="docx">DOCX</option>
+      <option value="xlsx">XLSX</option>
+      <option value="exe">EXE</option>
+      <option value="dll">DLL</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Buscar arquivos..." />
+  </div>
+</header>
+
+<div id="fileList">
+  <p>Nenhum arquivo carregado.</p>
+</div>
+
+<!-- Modal para visualização e ações -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeModal">&times;</button>
+    <div id="modalBody">
+      <!-- Conteúdo dinâmico será inserido aqui -->
+    </div>
+  </div>
+</div>
+
+<!-- Scripts JavaScript -->
+<script src="script/pg.js"></script>
+
+<script>
+</script>
+
+</body>
+</html>
